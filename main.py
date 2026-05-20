@@ -14,7 +14,7 @@ from sqlalchemy.orm import DeclarativeBase, sessionmaker, Session
 4. bikin fungsi pemanggilan buka tutup sesi pake getdb
 5. eksekusi pembuatan tabel pake Base.metadata blabla dengan koneksi mesin nya engine
 """
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:123@localhost:5432/db_buku") #cari tempat file postgres dari os kita
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:cihuy@localhost:5432/db_buku") #cari tempat file postgres dari os kita
 
 engine = create_engine(DATABASE_URL) #bikin mesin koneksi ke db url 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine) #bikin sesi transaksi db dan app
